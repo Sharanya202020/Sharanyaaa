@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Portfolio</title>
+<title>Sharanya Bhat | Portfolio</title>
 
 <style>
 *{
@@ -15,8 +15,8 @@
 }
 
 body{
-    background:#081018;;
-    color:white;
+    background:#f1f5f9;
+    color:#1e293b;
 }
 
 /* Navbar */
@@ -25,8 +25,8 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:20px 8%;
-    background:rgba(255,255,255,0.05);
-    backdrop-filter:blur(10px);
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
     position:fixed;
     width:100%;
     top:0;
@@ -42,12 +42,13 @@ nav{
 nav ul{
     display:flex;
     list-style:none;
-    gap:30px;
+    gap:25px;
 }
 
 nav ul li a{
     text-decoration:none;
-    color:white;
+    color:#1e293b;
+    font-weight:500;
     transition:0.3s;
 }
 
@@ -55,20 +56,24 @@ nav ul li a:hover{
     color:#14b8a6;
 }
 
-/* Hero Section */
+/* Hero */
 .hero{
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
-    background:linear-gradient(135deg,#0f172a,#1e293b,#0f172a);
+    padding:120px 20px 50px;
+    background:linear-gradient(135deg,#dbeafe,#f0fdfa,#e0f2fe);
+}
+
+.hero-content{
+    max-width:800px;
 }
 
 .hero-content h1{
     font-size:4rem;
-    margin-bottom:15px;
+    margin-bottom:20px;
 }
 
 .hero-content span{
@@ -77,58 +82,49 @@ nav ul li a:hover{
 
 .hero-content p{
     font-size:1.2rem;
-    color:#cbd5e1;
+    line-height:1.8;
     margin-bottom:30px;
 }
 
 .btn{
     display:inline-block;
     padding:12px 28px;
-    background:#14b8a6;
-    color:#0f172a;
     text-decoration:none;
+    background:#14b8a6;
+    color:white;
     border-radius:30px;
-    font-weight:bold;
+    margin:5px;
     transition:0.3s;
 }
 
 .btn:hover{
     transform:translateY(-3px);
-    box-shadow:0 0 20px #14b8a6;
 }
 
 /* Sections */
 section{
-    padding:100px 10%;
+    padding:80px 10%;
 }
 
 .section-title{
     text-align:center;
-    font-size:2.5rem;
-    margin-bottom:50px;
     color:#14b8a6;
+    font-size:2.5rem;
+    margin-bottom:40px;
 }
 
-/* About */
-.about{
-    display:flex;
-    flex-wrap:wrap;
-    gap:40px;
-    align-items:center;
-}
-
-.about img{
-    width:300px;
+/* Cards */
+.card{
+    background:white;
     border-radius:20px;
+    padding:30px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
 }
 
 .about-text{
-    flex:1;
-}
-
-.about-text p{
+    max-width:900px;
+    margin:auto;
     line-height:1.8;
-    color:#cbd5e1;
 }
 
 /* Skills */
@@ -139,17 +135,16 @@ section{
 }
 
 .skill-card{
-    background:#111827;;
-    padding:25px;
+    background:white;
+    padding:20px;
     text-align:center;
     border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
     transition:0.3s;
 }
 
 .skill-card:hover{
-    transform:translateY(-10px);
-    background:#14b8a6;
-    color:#0f172a;
+    transform:translateY(-5px);
 }
 
 /* Projects */
@@ -160,19 +155,15 @@ section{
 }
 
 .project-card{
-    background:#111827;;
+    background:white;
     padding:25px;
     border-radius:20px;
-    transition:0.3s;
-}
-
-.project-card:hover{
-    transform:scale(1.05);
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
 }
 
 .project-card h3{
     color:#14b8a6;
-    margin-bottom:10px;
+    margin-bottom:15px;
 }
 
 /* Contact */
@@ -182,92 +173,122 @@ section{
 
 .contact p{
     margin:10px 0;
-    color:#cbd5e1;
 }
 
 /* Footer */
 footer{
     text-align:center;
-    padding:20px;
-    background:#020617;
-    color:#94a3b8;
+    padding:25px;
+    background:white;
+    margin-top:40px;
+    border-top:1px solid #ddd;
 }
 
-/* Responsive */
+/* Mobile */
 @media(max-width:768px){
 
 .hero-content h1{
     font-size:2.5rem;
 }
 
-.about{
+nav{
     flex-direction:column;
-    text-align:center;
+    gap:15px;
 }
 
-.about img{
-    width:250px;
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
 }
 }
 </style>
-</head>
 
+</head>
 <body>
 
 <nav>
-    <div class="logo">Sharanya</div>
+    <div class="logo">Sharanya Bhat</div>
 
     <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 
-<!-- Hero Section -->
-<section class="hero" id="home">
-    <div class="hero-content">
-        <h1>Hello, I'm <span>Sharanya Bhat</span></h1>
-        <p>Electronics & Communication Engineering Student | IoT Developer | Embedded Systems Enthusiast</p>
-        <a href="#projects" class="btn">View My Work</a>
-    </div>
+<!-- Hero -->
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Welcome to  <span>Sharanya's portfolio</span></h1>
+
+<p>
+Electronics & Communication Engineering Student<br>
+Passionate About IoT, Embedded Systems, Digital Design & Automation Technologies
+</p>
+
+<a href="projects.html" class="btn">View Projects</a>
+<a href="resume.html" class="btn">View Resume</a>
+
+</div>
+
 </section>
 
 <!-- About -->
-<section id="about">
-    <h2 class="section-title">About Me</h2>
+<section>
 
-    <div class="about">
+<h2 class="section-title">About Me</h2>
 
-        <div class="about-text">
-            <p>
-I am a Final Year Electronics & Communication Engineering student
-passionate about IoT, Embedded Systems, Digital Design, and
-innovative engineering solutions. I enjoy developing practical
-projects that solve real-world problems using sensor networks,
-automation systems, and FPGA-based designs.
-</p>
-
-<br>
+<div class="card about-text">
 
 <p>
-My interests include IoT applications, automation systems,
-Verilog HDL, Vivado design, and sustainable technology
-solutions. I continuously explore emerging technologies and
-work on projects that combine hardware and software to create
-impactful systems.
+I am a Final Year Electronics & Communication Engineering student
+with a strong interest in IoT, Embedded Systems, Automation,
+and Digital Design. I enjoy building practical technology
+solutions that combine hardware and software to solve
+real-world challenges.
 </p>
-        </div>
-    </div>
+
+</div>
+
+</section>
+
+<!-- Education -->
+<section>
+
+<h2 class="section-title">Education</h2>
+
+<div class="card">
+
+<h3>Btech</h3>
+
+<p>
+Electronics & Communication Engineering
+</p>
+
+<p>
+<strong>College:</strong> NMAM Institude of technology
+</p>
+
+<p>
+<strong>Expected Graduation:</strong> 2026
+</p>
+
+</div>
+
 </section>
 
 <!-- Skills -->
-<section id="skills">
-    <h2 class="section-title">Skills</h2>
+<section>
 
-    <div class="skill-card">Python</div>
+<h2 class="section-title">Technical Skills</h2>
+
+<div class="skills-grid">
+
+<div class="skill-card">Python</div>
 <div class="skill-card">C Programming</div>
 <div class="skill-card">IoT Development</div>
 <div class="skill-card">Embedded Systems</div>
@@ -276,69 +297,71 @@ impactful systems.
 <div class="skill-card">Verilog HDL</div>
 <div class="skill-card">Vivado</div>
 <div class="skill-card">Git & GitHub</div>
+
+</div>
+
 </section>
 
-<!-- Projects -->
-<section id="projects">
-    <h2 class="section-title">Projects</h2>
+<!-- Featured Projects -->
+<section>
 
-    <div class="project-grid">
+<h2 class="section-title">Featured Projects</h2>
 
-        <div class="project-card">
-    <h3>IoT-Based Cold Storage Monitoring System</h3>
-    <p>
-        Developed an IoT monitoring system to track temperature
-        and humidity inside cold storage facilities in real time.
-        The system generates alerts when environmental conditions
-        exceed safe limits, helping reduce product spoilage.
-    </p>
+<div class="project-grid">
+
+<div class="project-card">
+<h3>IoT-Based Cold Storage Monitoring System</h3>
+<p>
+Real-time monitoring of temperature and humidity with automated alerts.
+</p>
 </div>
 
 <div class="project-card">
-    <h3>Automatic Cat Sensor Door Opening System</h3>
-    <p>
-        Designed a smart pet access system that automatically
-        opens a door when a cat is detected nearby. The project
-        uses sensors and automated control mechanisms to improve
-        convenience and accessibility for pet owners.
-    </p>
+<h3>Automatic Cat Sensor Door Opening System</h3>
+<p>
+Smart pet access system using sensors and automation.
+</p>
 </div>
 
 <div class="project-card">
-    <h3>Automated Toll Booth System</h3>
-    <p>
-        Developed an automated toll collection model capable of
-        vehicle detection and gate control without manual
-        intervention. The system demonstrates intelligent
-        transportation and automation concepts.
-    </p>
+<h3>Automated Toll Booth System</h3>
+<p>
+Vehicle detection and automated gate operation model.
+</p>
 </div>
 
 <div class="project-card">
-    <h3>Two-Way & Three-Way Traffic Signal Logic Using Vivado</h3>
-    <p>
-        Designed and simulated traffic signal controllers using
-        Verilog HDL in Vivado. Implemented finite state machine
-        logic for two-way and three-way intersections with proper
-        signal timing and state transitions.
-    </p>
+<h3>Traffic Signal Logic Using Vivado</h3>
+<p>
+Two-way and three-way traffic controller designed using Verilog HDL.
+</p>
 </div>
 
-    </div>
+</div>
+
 </section>
 
-<!-- Contact -->
-<section id="contact">
-    <h2 class="section-title">Contact Me</h2>
+<!-- Contact Preview -->
+<section>
 
-    <div class="contact">
-        <p>Email: sharanyaabhat20@gmail.com</p>
-        <p>GitHub: github.com/Sharanya202020</p>
-    </div>
+<h2 class="section-title">Contact</h2>
+
+<div class="contact">
+
+<p><strong>Email:</strong> sharanyaabhat20@gmail.com</p>
+
+<p><strong>GitHub:</strong> github.com/Sharanya202020</p>
+
+<p>
+<a href="contact.html" class="btn">Contact Me</a>
+</p>
+
+</div>
+
 </section>
 
 <footer>
-    © 2026 Sharanya | Portfolio Website
+© 2026 Sharanya Bhat | Portfolio Website
 </footer>
 
 </body>

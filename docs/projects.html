@@ -1,10 +1,9 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Projects</title>
+<title>Projects | Sharanya Bhat</title>
 
 <style>
 *{
@@ -15,8 +14,8 @@
 }
 
 body{
-    background:#081018;
-    color:white;
+    background:#f1f5f9;
+    color:#1e293b;
 }
 
 /* Navbar */
@@ -25,8 +24,8 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding:20px 8%;
-    background:rgba(255,255,255,0.05);
-    backdrop-filter:blur(10px);
+    background:white;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
 }
 
 .logo{
@@ -43,7 +42,7 @@ nav ul{
 
 nav ul li a{
     text-decoration:none;
-    color:white;
+    color:#1e293b;
     transition:0.3s;
 }
 
@@ -58,24 +57,31 @@ section{
 
 .section-title{
     text-align:center;
-    font-size:2.5rem;
-    margin-bottom:50px;
+    font-size:2.8rem;
+    margin-bottom:20px;
     color:#14b8a6;
 }
 
-/* Projects */
+.section-subtitle{
+    text-align:center;
+    margin-bottom:50px;
+    color:#64748b;
+    font-size:1.1rem;
+}
+
+/* Projects Grid */
 .project-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:25px;
 }
 
 .project-card{
-    background:#111827;
+    background:white;
     padding:30px;
     border-radius:20px;
+    box-shadow:0 4px 20px rgba(0,0,0,0.08);
     transition:0.3s;
-    box-shadow:0 0 15px rgba(20,184,166,0.15);
 }
 
 .project-card:hover{
@@ -89,11 +95,27 @@ section{
 }
 
 .project-card p{
-    color:#cbd5e1;
     line-height:1.8;
+    color:#475569;
 }
 
-/* Responsive */
+.tech{
+    margin-top:15px;
+    font-size:0.9rem;
+    color:#0f766e;
+    font-weight:bold;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:25px;
+    background:white;
+    margin-top:50px;
+    border-top:1px solid #e2e8f0;
+}
+
+/* Mobile */
 @media(max-width:768px){
 
 nav{
@@ -104,6 +126,10 @@ nav{
 nav ul{
     flex-wrap:wrap;
     justify-content:center;
+}
+
+.section-title{
+    font-size:2.2rem;
 }
 }
 </style>
@@ -119,13 +145,19 @@ nav ul{
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
 </nav>
 
 <section>
 
-<h1 class="section-title">Academic Projects</h1>
+<h1 class="section-title">My Projects</h1>
+
+<p class="section-subtitle">
+A collection of academic and engineering projects focused on
+IoT, Automation, Embedded Systems, and Digital Design.
+</p>
 
 <div class="project-grid">
 
@@ -133,23 +165,31 @@ nav ul{
 <h2>IoT-Based Cold Storage Monitoring System</h2>
 
 <p>
-Developed an IoT-based monitoring system to continuously track
-temperature and humidity inside cold storage facilities. The
-system provides real-time monitoring and alerts when conditions
-move beyond safe limits, helping reduce spoilage and maintain
-product quality.
+Developed an intelligent monitoring system to continuously
+track temperature and humidity inside cold storage facilities.
+The system provides real-time environmental monitoring and
+generates alerts when conditions exceed safe limits, helping
+to reduce spoilage and improve storage efficiency.
 </p>
+
+<div class="tech">
+Technologies: IoT, Sensors, ESP32, Monitoring Systems
+</div>
 </div>
 
 <div class="project-card">
 <h2>Automatic Cat Sensor Door Opening System</h2>
 
 <p>
-Designed a smart pet access system that automatically opens a
-door when a cat is detected nearby. The project uses sensors
-and automated control mechanisms to provide convenient and
-secure access for pets without human intervention.
+Designed a smart pet access solution that automatically opens
+a door when a cat is detected nearby. The system utilizes
+sensors and automated control mechanisms to provide secure,
+convenient, and hands-free access for pets.
 </p>
+
+<div class="tech">
+Technologies: Sensors, Automation, Embedded Systems
+</div>
 </div>
 
 <div class="project-card">
@@ -158,10 +198,13 @@ secure access for pets without human intervention.
 <p>
 Developed an automated toll collection model capable of
 detecting vehicles and controlling gate operations without
-manual intervention. The system improves traffic flow and
-demonstrates automation concepts used in intelligent
-transportation systems.
+manual intervention. The project demonstrates concepts used
+in intelligent transportation systems and smart infrastructure.
 </p>
+
+<div class="tech">
+Technologies: Automation, Sensors, Traffic Systems
+</div>
 </div>
 
 <div class="project-card">
@@ -170,16 +213,23 @@ transportation systems.
 <p>
 Designed and simulated traffic signal controllers using
 Verilog HDL in Vivado. Implemented finite state machine
-logic for both two-way and three-way intersections with
-proper timing sequences, state transitions, and signal
-coordination.
+(FSM) logic for both two-way and three-way intersections,
+ensuring proper signal timing, coordination, and safe traffic
+flow.
 </p>
+
+<div class="tech">
+Technologies: Verilog HDL, Vivado, FPGA Design, FSM
+</div>
 </div>
 
 </div>
 
 </section>
 
+<footer>
+© 2026 Sharanya Bhat | Portfolio Website
+</footer>
+
 </body>
 </html>
-```
