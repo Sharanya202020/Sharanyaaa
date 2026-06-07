@@ -1,46 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#081018;
+    color:white;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#14b8a6;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#14b8a6;
+}
+
+/* Main Section */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#14b8a6;
+}
+
+.resume-container{
+    max-width:900px;
+    margin:auto;
+    background:#111827;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(20,184,166,0.2);
+}
+
+.resume-container h2{
+    color:#14b8a6;
+    margin-bottom:15px;
+    margin-top:20px;
+}
+
+.resume-container p,
+.resume-container li{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+.resume-container ul{
+    margin-left:20px;
+}
+
+.download-btn{
+    display:inline-block;
+    margin-top:15px;
+    padding:12px 25px;
+    background:#14b8a6;
+    color:#081018;
+    text-decoration:none;
+    border-radius:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.download-btn:hover{
+    transform:translateY(-3px);
+}
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+}
+</style>
+
 </head>
+
 <body>
 
-<header>
-    <h1>Resume</h1>
+<nav>
+    <div class="logo">Sharanya Bhat</div>
 
-    <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
-        <a href="projects.html">Projects</a> |
-        <a href="resume.html">Resume</a> |
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
-
-<hr>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
 
 <section>
+
+<h1 class="section-title">Resume</h1>
+
+<div class="resume-container">
 
 <h2>Resume Download</h2>
 
 <p>
-Click the button below to download my resume.
+You can download my latest resume using the button below.
 </p>
 
-<a href="Sharanya_Bhat_Resume.pdf" download>
-    Download Resume
+<a href="Sharanya_Bhat_Resume.pdf" download class="download-btn">
+
+Download Resume
 </a>
 
 <h2>Technical Skills</h2>
 
 <ul>
-    <li>Web Development</li>
-    <li>IoT</li>
     <li>Python</li>
     <li>C Programming</li>
+    <li>IoT Development</li>
+    <li>Embedded Systems</li>
+    <li>Arduino</li>
+    <li>ESP32</li>
+    <li>Verilog HDL</li>
+    <li>Vivado</li>
+    <li>Git & GitHub</li>
 </ul>
+
+<h2>Project Highlights</h2>
+
+<ul>
+    <li>IoT-Based Cold Storage Monitoring System</li>
+    <li>Automatic Cat Sensor Door Opening System</li>
+    <li>Automated Toll Booth System</li>
+    <li>Two-Way & Three-Way Traffic Signal Logic Using Vivado</li>
+</ul>
+
+</div>
 
 </section>
 

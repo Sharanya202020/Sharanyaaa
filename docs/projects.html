@@ -1,21 +1,123 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Projects</title>
-<link rel="stylesheet" href="css/style.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#081018;
+    color:white;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#14b8a6;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#14b8a6;
+}
+
+/* Section */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:50px;
+    color:#14b8a6;
+}
+
+/* Projects */
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:#111827;
+    padding:30px;
+    border-radius:20px;
+    transition:0.3s;
+    box-shadow:0 0 15px rgba(20,184,166,0.15);
+}
+
+.project-card:hover{
+    transform:translateY(-8px);
+}
+
+.project-card h2{
+    color:#14b8a6;
+    margin-bottom:15px;
+    font-size:1.3rem;
+}
+
+.project-card p{
+    color:#cbd5e1;
+    line-height:1.8;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:15px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+}
+</style>
+
 </head>
 
 <body>
 
 <nav>
-    <div class="logo">Portfolio</div>
+    <div class="logo">Sharanya Bhat</div>
 
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -23,34 +125,54 @@
 
 <section>
 
-<h1 class="section-title">Projects</h1>
+<h1 class="section-title">Academic Projects</h1>
 
 <div class="project-grid">
 
 <div class="project-card">
-<h2>Flood Monitoring System</h2>
+<h2>IoT-Based Cold Storage Monitoring System</h2>
 
 <p>
-An IoT-based system that detects water levels
-and sends alerts to users.
+Developed an IoT-based monitoring system to continuously track
+temperature and humidity inside cold storage facilities. The
+system provides real-time monitoring and alerts when conditions
+move beyond safe limits, helping reduce spoilage and maintain
+product quality.
 </p>
 </div>
 
 <div class="project-card">
-<h2>Solar Powered Electric Bike</h2>
+<h2>Automatic Cat Sensor Door Opening System</h2>
 
 <p>
-Electric vehicle powered by solar-assisted charging
-for sustainable transportation.
+Designed a smart pet access system that automatically opens a
+door when a cat is detected nearby. The project uses sensors
+and automated control mechanisms to provide convenient and
+secure access for pets without human intervention.
 </p>
 </div>
 
 <div class="project-card">
-<h2>Home Automation System</h2>
+<h2>Automated Toll Booth System</h2>
 
 <p>
-Control electrical appliances remotely using
-Wi-Fi and smartphone applications.
+Developed an automated toll collection model capable of
+detecting vehicles and controlling gate operations without
+manual intervention. The system improves traffic flow and
+demonstrates automation concepts used in intelligent
+transportation systems.
+</p>
+</div>
+
+<div class="project-card">
+<h2>Two-Way & Three-Way Traffic Signal Logic Using Vivado</h2>
+
+<p>
+Designed and simulated traffic signal controllers using
+Verilog HDL in Vivado. Implemented finite state machine
+logic for both two-way and three-way intersections with
+proper timing sequences, state transitions, and signal
+coordination.
 </p>
 </div>
 
@@ -60,3 +182,4 @@ Wi-Fi and smartphone applications.
 
 </body>
 </html>
+```

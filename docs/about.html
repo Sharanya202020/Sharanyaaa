@@ -1,21 +1,112 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About Me</title>
-<link rel="stylesheet" href="css/style.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#081018;
+    color:white;
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:bold;
+    color:#14b8a6;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#14b8a6;
+}
+
+/* Main Section */
+section{
+    padding:80px 10%;
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.5rem;
+    margin-bottom:40px;
+    color:#14b8a6;
+}
+
+.about-container{
+    max-width:900px;
+    margin:auto;
+    background:#111827;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 0 20px rgba(20,184,166,0.2);
+}
+
+.about-container h2{
+    color:#14b8a6;
+    margin-bottom:15px;
+    margin-top:20px;
+}
+
+.about-container p{
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+}
+</style>
+
 </head>
 
 <body>
 
 <nav>
-    <div class="logo">Portfolio</div>
+    <div class="logo">Sharanya Bhat</div>
 
     <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="contact.html">Contact</a></li>
     </ul>
@@ -30,22 +121,48 @@
 <h2>Who Am I?</h2>
 
 <p>
-I am a Final Year Engineering Student with interests in
-Web Development, IoT, Embedded Systems and Smart Technologies.
+I am Sharanya Bhat, a Final Year Electronics & Communication
+Engineering student with a strong interest in IoT, Embedded
+Systems, Digital Design, and Automation Technologies.
 </p>
 
 <br>
 
 <p>
-I enjoy creating innovative solutions that solve real-world
-problems and contribute to sustainable development.
+I enjoy working on projects that combine hardware and software
+to solve practical challenges. My experience includes designing
+IoT-based monitoring systems, automation solutions, and digital
+logic designs using Verilog HDL and Vivado.
 </p>
 
-<br>
+<h2>Areas of Interest</h2>
 
 <p>
-My goal is to become a software developer and engineer who
-builds impactful technology products.
+• Internet of Things (IoT)<br>
+• Embedded Systems<br>
+• Automation and Smart Systems<br>
+• Digital Design using Verilog HDL<br>
+• FPGA Development with Vivado<br>
+• Sustainable Technology Solutions
+</p>
+
+<h2>Career Objective</h2>
+
+<p>
+To build innovative and reliable technology solutions that
+improve everyday life while continuously expanding my
+knowledge in engineering, automation, and emerging
+technologies.
+</p>
+
+<h2>Strengths</h2>
+
+<p>
+• Problem Solving<br>
+• Quick Learning Ability<br>
+• Team Collaboration<br>
+• Project Development<br>
+• Technical Documentation
 </p>
 
 </div>
@@ -54,3 +171,4 @@ builds impactful technology products.
 
 </body>
 </html>
+```
